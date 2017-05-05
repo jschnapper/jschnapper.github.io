@@ -581,6 +581,7 @@ color: #EDF2F4;
 	object-fit: cover;
 	height: auto;
 	box-sizing: border-box;
+	max-width: 46%;
 }
 
 
