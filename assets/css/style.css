@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	font-family: 'Quattrocento Sans', sans-serif;	
+	background-color: #ecf0f1;
+}
+
+.header {
+	font-size: 1.5em;
+	position: relative;
+	top: 40%;
+	text-align: center;
+	width: 100%;
+	color: #2D2D2A;
+}
+
+.character {
+	position: relative;
+	top: 60%;
+	width: 531.25px;
+	height: 467px;
+	background: url("../img/final_sleep.png");
+	animation: sleep 5s steps(20) infinite;
+
+}
+
+@keyframes sleep {
+	to {
+		background-position: -10625px;
+	}
+}
