@@ -7,10 +7,24 @@ body {
 .header {
 	font-size: 1.5em;
 	position: relative;
-	top: 40%;
+	top: 30%;
 	text-align: center;
 	width: 100%;
 	color: #2D2D2A;
+}
+
+#img-contained {
+	height: 250px;
+	width: 550px;
+	position: relative;
+	top: 40%;
+	margin: 0 auto;
+}
+
+#img-contained > img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 
 .character {
