@@ -1,1 +1,0 @@
-# jschnapper.github.io
