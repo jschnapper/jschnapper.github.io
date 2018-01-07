@@ -6,12 +6,12 @@ $(document).ready(function() {
 
 	let last = "resume";
 	$(".top-text").click(function() {
-		if ($(this).html() == "Resume") {
+		if (((($(this).html() == "Projects") && last == "project")) || ((($(this).html() == "Resume") && last == "resume"))) {
+		}
+		else if ($(this).html() == "Resume") {
 			$("#arrow-container-resume-now").removeClass("projectsSelected");
 			$("#arrow-container-resume-now").addClass("resumeSelected");
 			last = "resume";
-		}
-		else if (((($(this).html() == "Projects") && last == "project")) || ((($(this).html() == "Resume") && last == "resume"))) {
 		}
 		else {
 			$("#arrow-container-resume-now").removeClass("resumeSelected");

@@ -1,17 +1,18 @@
 $(document).ready(function() {
 
-	// Nav selections 
+	// Nav selections
+
 	$("#about-container").fadeIn(700);
 	$("#projects-container").fadeIn(700);
 
 	let last = "project";
 	$(".top-text").click(function() {
-		if ($(this).html() == "Resume") {
+		if (((($(this).html() == "Projects") && last == "project")) || ((($(this).html() == "Resume") && last == "resume"))) {
+		}
+		else if ($(this).html() == "Resume") {
 			$("#arrow-container").removeClass("projectsSelected");
 			$("#arrow-container").addClass("resumeSelected");
 			last = "resume";
-		}
-		else if (((($(this).html() == "Projects") && last == "project")) || ((($(this).html() == "Resume") && last == "resume"))) {
 		}
 		else {
 			$("#arrow-container").removeClass("resumeSelected");
