@@ -24,6 +24,10 @@ body {
   background-color: #C4E0F9;
 }
 
+.hidden {
+	display: none;
+}
+
 /*TOP STYLE*/
 
 #top-container {
@@ -57,6 +61,17 @@ body {
 	width: 120px;
 	height: 18px;
 	z-index: -2;
+}
+
+#arrow-container-resume-now {
+	position: absolute;
+	top: 22px;
+	width: 120px;
+	height: 18px;
+	z-index: -2;
+	-webkit-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	        transform: rotate(180deg);
 }
 
 #arrow-container-project {
@@ -246,6 +261,54 @@ body {
 	width: 100%;
 	object-fit: cover;
 }
+
+/*****************/
+/*FOR RESUME PAGE*/
+/*****************/
+
+#resume-container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.main-head {
+	font-size: 1.5em;
+	font-weight: 700;
+	padding: 2px;
+}
+
+.subhead {
+	font-size: 1.2em;
+	font-style: italic;
+	padding: 2px;
+}
+
+.resume-text {
+	margin-top: 8px;
+	padding: 2px;
+	font-size: 1em;
+}
+
+.resume-text > a, .resume-text > a:visited {
+	color: #3498db;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.resume-text > a:hover {
+	color: #3498db;
+	font-weight: 700;
+	opacity: 0.7;
+	text-decoration: underline;
+}
+
+.resume-text > a:active {
+	color: #3498db;
+	font-weight: 700;
+	opacity: 0.9;
+	text-decoration: underline;
+}
+
 
 
 

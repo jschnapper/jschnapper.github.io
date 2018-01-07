@@ -1,21 +1,21 @@
 $(document).ready(function() {
 
-	// Nav selections 
-	$("#about-container").fadeIn();
-	$("#projects-container").fadeIn();
+	$("#resume-container").fadeIn();
 
-	let last = "project";
+	// Nav selections 
+
+	let last = "resume";
 	$(".top-text").click(function() {
 		if ($(this).html() == "Resume") {
-			$("#arrow-container").removeClass("projectsSelected");
-			$("#arrow-container").addClass("resumeSelected");
+			$("#arrow-container-resume-now").removeClass("projectsSelected");
+			$("#arrow-container-resume-now").addClass("resumeSelected");
 			last = "resume";
 		}
 		else if ((($(this).html() == "Projects") && last == "project")) {
 		}
 		else {
-			$("#arrow-container").removeClass("resumeSelected");
-			$("#arrow-container").addClass("projectsSelected");
+			$("#arrow-container-resume-now").removeClass("resumeSelected");
+			$("#arrow-container-resume-now").addClass("projectsSelected");
 			last = "project";
 		}
 	});
@@ -54,12 +54,6 @@ $(document).ready(function() {
 			}, 650);
 		}
 	});
-
-	// Project Links
-
-	$(".project").click(function() {
-   		window.location = $(this).find("a").attr("href");
-   	});
 
 });
 
