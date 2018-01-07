@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
 	// Nav selections 
-	$("#about-container").fadeIn();
-	$("#projects-container").fadeIn();
+	$("#about-container").fadeIn(700);
+	$("#projects-container").fadeIn(700);
 
 	let last = "project";
 	$(".top-text").click(function() {
@@ -11,7 +11,7 @@ $(document).ready(function() {
 			$("#arrow-container").addClass("resumeSelected");
 			last = "resume";
 		}
-		else if ((($(this).html() == "Projects") && last == "project")) {
+		else if (((($(this).html() == "Projects") && last == "project")) || ((($(this).html() == "Resume") && last == "resume"))) {
 		}
 		else {
 			$("#arrow-container").removeClass("resumeSelected");
@@ -51,7 +51,7 @@ $(document).ready(function() {
 			$("#resume-container").fadeOut();
 			setTimeout(function() {
 				window.location.href = "index.html";
-			}, 650);
+			}, 620);
 		}
 	});
 

@@ -11,7 +11,7 @@ $(document).ready(function() {
 			$("#arrow-container-resume-now").addClass("resumeSelected");
 			last = "resume";
 		}
-		else if ((($(this).html() == "Projects") && last == "project")) {
+		else if (((($(this).html() == "Projects") && last == "project")) || ((($(this).html() == "Resume") && last == "resume"))) {
 		}
 		else {
 			$("#arrow-container-resume-now").removeClass("resumeSelected");
