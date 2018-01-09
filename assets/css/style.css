@@ -14,6 +14,7 @@ body {
 
 /*PRIMARY BLUE: #3498db*/
 /*SECONDARY BLUE: #C4E0F9*/
+/*Other Blue: #13293D*/
 /*TERTIARY COLOR: #FFE9AC*/
 
 ::-moz-selection {
@@ -153,14 +154,21 @@ body {
 
 /*ABOUT STYLE*/
 
+#about-container {
+	padding: 8px 0px 8px 10%;
+}
+
+#name {
+	position: relative;
+	font-size: 3em;
+	font-weight: 700;
+}
+
 #about-text {
-	width: 50%;
-	text-align: center;
-	margin: 0 auto;
+	width: 70%;
 	font-size: 1em;
 	line-height: 1.5;
-	min-width: 455px;
-	max-width: 600px;
+	min-width: 385px;
 }
 
 .bolded  {
@@ -172,10 +180,10 @@ body {
 .bolded:before {
 	content:"";
 	position: absolute;
-	height: 40%;
-	width: 100%;
-	top: 12px;
-	left: -4px;
+	height: 25%;
+	width: 102%;
+	left: -2px;
+	top: 10px;
 	background-color: #FFE9AC;
 	z-index: -1;
 }
@@ -242,18 +250,51 @@ body {
 .header {
 	font-size: 1em;
 	position: relative;
-	top: 20%;
 	text-align: center;
 	width: 100%;
 	color: #2D2D2A;
+	top: 10%;
+	min-width: 612px;
+}
+
+#construction-container {
+	position: relative;
+	width: 550px;
+	height: 80%;
+	margin: 0 auto;
+	min-width: 218px;
+	top:15%;
+}
+
+#z-container {
+	position: absolute;
+	left: 424px;
+	top: 18px;
+	width: 40px;
+	height: 150px;
+	z-index: 3;
+	text-align: center;
+}
+
+.z {
+	position: absolute;
+	font-size: 36px;
+	font-weight: 700;
+	top: 100px;
+
+}
+
+.snoring {
+	animation: snore 3s linear forwards;
 }
 
 #img-contained {
 	height: 250px;
 	width: 550px;
-	position: relative;
-	top: 30%;
-	margin: 0 auto;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 #img-contained > img {
@@ -461,5 +502,18 @@ body {
 	100% {
 		-webkit-transform: rotate(360deg);
 		        transform: rotate(360deg);
+	}
+}
+
+@keyframes snore {
+	0% {
+		opacity: 1;
+		font-size: 36px
+	}
+	100% {
+		opacity: 0;
+		font-size: 8px;
+		transform: translateY(-80px);
+		display: none;
 	}
 }

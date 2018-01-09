@@ -1,0 +1,42 @@
+/*general*/
+
+body {
+	margin: 0;
+	font-family: 'Quattrocento', sans-serif;
+}
+
+/*STYLES*/
+
+/*PRIMARY BLUE: #3498db*/
+/*SECONDARY BLUE: #C4E0F9*/
+/*Other Blue: #13293D*/
+/*TERTIARY COLOR: #FFE9AC*/
+
+/*font-family: 'Oswald', sans-serif;
+font-family: 'Quattrocento Sans', sans-serif;
+font-family: 'Quattrocento', serif;*/
+
+::-moz-selection {
+  background-color: #C4E0F9;
+}
+
+::selection {
+  background-color: #C4E0F9;
+}
+
+.title-container {
+	position: relative;
+	left: 10%;
+	width: 40%;
+	padding: 4px;
+	margin-top: 12px;
+}
+
+.title {
+	font-family: 'Oswald', sans-serif;
+	position: absolute;
+	font-size: 10vw;
+	line-height: 1;
+	font-weight: 700;
+	color: #3498db;
+}
