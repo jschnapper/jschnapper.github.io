@@ -152,20 +152,32 @@ body {
 	opacity: 1 !important;
 }
 
+/*CONTENT*/
+
+.content-container {
+}
+
 /*ABOUT STYLE*/
 
 #about-container {
 	padding: 8px 0px 8px 10%;
+	position: relative;
+	width: 60%;
+	min-width: 400px;
+	border-radius: 4px;
 }
+
 
 #name {
 	position: relative;
 	font-size: 3em;
 	font-weight: 700;
+	opacity: 1;
+	padding: 0px 8px 8px 8px;
 }
 
 #about-text {
-	width: 70%;
+	padding: 8px;
 	font-size: 1em;
 	line-height: 1.5;
 	min-width: 385px;
@@ -191,6 +203,7 @@ body {
 /*PROJECTS*/
 
 #projects-container {
+	top: 60%;
 	position: relative;
 	width: 100%;
 }
@@ -238,8 +251,8 @@ body {
 }
 
 .project:hover {
-	-webkit-box-shadow: 4px 4px 2px #C4E0F9;
-	        box-shadow: 4px 4px 2px #C4E0F9;
+	-webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+	        box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
 	opacity: 1;
 	-webkit-transition: .2s;
 	-o-transition: .2s;
@@ -309,7 +322,7 @@ body {
 
 #resume-container {
 	width: 80%;
-	margin: 0 auto;
+	margin: 8px auto;
 }
 
 .main-head {
