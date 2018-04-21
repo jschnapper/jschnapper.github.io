@@ -1,0 +1,633 @@
+
+/*FORMATTING*/
+body {
+	height: 2400px;
+	margin: 0px;
+	font-family: 'Cabin Condensed', sans-serif;
+	background-color: #EDF2F4;
+	color: #363537;
+}
+
+h1 {
+	font-size: 80px;
+	font-weight: 700;
+	padding: 10px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+a {
+ text-decoration: none;
+}
+
+.pea {
+	display: inline-block;
+	margin:0;
+	padding:0;
+}
+
+.changed {
+}
+
+.changed:hover{
+	opacity:0.5;
+}
+.pea:hover{
+	cursor: auto;
+}
+
+.top {
+  height: 500px;
+  position: relative;
+}
+
+#title {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	font-size: 60px;
+	color: #2ECC71;
+	left: 0%;
+	margin-top: 50px;
+	margin-left: 40px;
+	position: absolute;
+	z-index: 40;
+}
+
+#sub-title {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #EDF2F4;
+	left:0%;
+	letter-spacing: 2px;
+	margin-top: 115px;
+	margin-left:40px;
+	position: absolute;
+	z-index: 40;
+}
+
+
+.overlay {
+	color: white;
+	text-align: center;
+	height: 500px;
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	z-index: 6;
+	opacity: 0.2;
+}
+
+#img-head {
+	height: 100%;
+	width: 100%;
+	object-fit:cover;
+	z-index: 4;
+}
+
+/*NAVIGATION*/
+#header {
+	width: 100%;
+}
+
+/*pevents jumping once fixed*/
+#nav-wrapper {
+	height: 60px;
+	min-width: 644px;
+}
+
+nav {
+	position: relative;
+	background-color: #363537;
+	color: #EDF2F4;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	z-index: 11;
+	height: 60px;
+}
+
+#logo {
+	height: 40px;
+	object-fit: cover;
+	display: block;
+	float: left;
+	margin-left: 24px;
+	margin-top: 10px;
+}
+
+#nav-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+.nav-item {
+	color: #EDF2F4;
+	font-size: 18px;
+	float: left;
+	display: block;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 20px 10px;
+	height: 20px;
+}
+
+.nav-item:first-child {
+	margin-left: 24px;
+
+}
+
+.nav-item:hover {
+	background-color: #2ECC71;
+	border-radius: 4px;
+
+}
+
+
+
+
+/*because it changes the margin of the page if not hidden*/
+section {
+	overflow: hidden;
+}
+
+/*CONTAINERS*/
+.container {
+	width: 100%;
+	background-color: #EDF2F4;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	z-index: 10;
+}
+
+.container.one {
+	height: auto;
+	padding: 20px;
+	margin: 40px 0px;
+}
+
+.container.two {
+	margin: 0 auto;
+	height: auto;
+	padding: 20px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.container.three {
+	margin: 0 auto;
+	height: auto;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+
+.closing-container{
+	height: 400px;
+	top:50%;
+	left:50%;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	padding: 20px;
+	position: relative;
+}
+
+/*CONTENT*/
+
+.description {
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 150%;
+	margin: 0 auto;
+	width: 580px;
+	margin-top: 10px;
+}
+
+#second-description {
+	font-size: 24px;
+}
+
+#dramatic-space{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/*made in-line because will add jquery*/
+#tag-wrap {
+	border: solid;
+	border-radius: 4px;
+}
+
+.tag-line {
+	font-size: 24px;
+	font-weight: 600;
+	display: inline-block;
+}
+
+.feature-container {
+	margin: 20px;
+	height: 340px;
+	position: relative;
+	display: inline-block;
+}
+
+.feature-box {
+	margin: 20px;
+	margin-top: 40px;
+	height: 300px;
+	width: 300px;
+	border: solid 4px;
+	border-radius: 4px;
+	border-color: #363537;
+	position: relative;
+
+}
+
+.feature-overlay {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: #2ECC71;
+	overflow: hidden;
+	width: 100%;
+	height:0;
+	transition: .5s ease;
+}
+
+.feature-pic {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+
+.feature-head {
+	font-size: 24px;
+	font-weight: 600;
+	width: 98%;
+	color: #363537;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.feature-description {
+	color: #EDF2F4;
+	font-size: 16px;
+	position: absolute;
+	width: 90%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.feature-box:hover .feature-overlay{
+	bottom: 0;
+	height: 100%;
+}
+
+
+
+
+
+#closing {
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	font-size: 80px;
+	font-weight: 700;
+	margin-top: 150px;
+	background-color: #2ECC71;
+	border: solid 4px #363537;
+	color: #EDF2F4;
+	padding: 8px 20px;
+	border-radius: 4px;
+	text-align: center;
+	position: absolute;
+}
+
+#closing:hover {
+	opacity: 0.9;
+	box-shadow: 5px 5px 20px black;
+
+}
+
+#footer{
+	height: 60px;
+	background-color: #363537;
+	position: relative;
+	bottom: 0;
+
+}
+
+#footer-info{
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 12px; 
+	color: #EDF2F4;
+	float: left;
+}
+
+#more-footer {
+	font-size: 12px;
+	color: #EDF2F4;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	width: 300px;
+
+}
+
+.footer-tags {
+	padding: 0px 6px;
+	display: inline-block;
+}
+.footer-tags:hover{
+	opacity: 0.8;
+}
+
+
+
+
+/*FADE TRANSITION*/
+.fade-container {
+	margin: 0 auto;
+	width:600px;
+	margin-top: 30px;
+	position: relative;
+	height: 60px;
+}
+
+
+.no-fade {
+	font-size: 40px;
+	position: absolute;
+	margin-left: 190px;
+
+}
+.fade-text{
+	font-size: 40px;
+	position: absolute;
+	margin-left:255px;
+}
+
+#family, #yourself, #navigate, #avoid, #identify {
+	display: none;
+}
+
+
+
+/*PARALLAX -- thank you w3school */
+/*thank you, mom, for believing in me*/
+/*thank you WDD for giving me these skillz*/
+
+.parallax-effect {
+	height: 500px; 
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-effect.one{ 
+    background-image: url("../img/screen_grab_1.jpg");
+
+}
+
+.parallax-effect.two{ 
+    background-image: url("../img/screen_grab_2.jpg");
+}
+
+.parallax-effect.three{ 
+    background-image: url("../img/screen_grab_3.jpg");
+}
+
+/*MODAL HW 7 Helped*/
+#modal-container {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: none;
+    z-index: 12;
+    color: #EDF2F4;
+}
+#modal-overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    opacity: 0.5;
+}
+#modal-box {
+    width: 500px;
+    height: 260px;
+    background: #363537;
+    border-radius: 4px;
+    position: absolute;
+    left: calc(50% - 250px);
+    top: calc(50% - 130px);
+    z-index: 100;
+    padding: 20px;
+    border: solid #EDF2F4;
+    box-shadow: 10px 10px 50px black;
+
+}
+#modal-head{
+    color: #2ECC71;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#modal-description{
+	margin-top: 10px;
+	padding: 4px;
+	font-size: 16px;
+	line-height: 150%;
+	margin-left: 20px;
+}
+
+.holders {
+    color: #EDF2F4;
+    display: block;
+    border: 5px solid white;
+    padding: 10px;
+    background: transparent;
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 460px;
+    font-size: 12px;
+    font-weight: 700;
+
+}
+
+.holders::-webkit-input-placeholder  {
+color: #EDF2F4;
+}
+
+#modal-footer {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.footers {
+    color: #EDF2F4;
+    font-weight: 700;
+    background-color: #2ECC71;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+ }
+ .footers:hover{
+    opacity: 0.75;
+    -ms-transition:0.2s;
+    -moz-transition:0.2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+/*LEGAL MODAL*/
+#legal-modal-container {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: none;
+    z-index: 12;
+    color: #EDF2F4;
+}
+#legal-modal-overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    opacity: 0.5;
+}
+#legal-modal-box {
+    width: auto;
+    height: auto;
+    background: #363537;
+    border-radius: 4px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 100;
+    padding: 20px;
+    border: solid red;
+    box-shadow: 10px 10px 50px black;
+
+}
+#legal-modal-head{
+    color: #2ECC71;
+    font-size: 30px;
+    left: calc(50% - auto);
+    top: calc(50% - auto);
+}
+
+/*ABOUT PAGE*/
+
+#about-body {
+	height: auto;
+}
+
+.about-container {
+	height: auto;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	position: relative;
+}
+
+.first-column{
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 2%;
+	margin-left: 20px;
+	float: left;
+	width: 46%;
+	box-sizing: border-box;
+}
+
+.second-column{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 2%;
+	margin-left: 2%;
+	float; left;
+	width: 46%;
+	background-color: black;
+	min-height: 300px;
+	object-fit: cover;
+	height: auto;
+	box-sizing: border-box;
+	max-width: 46%;
+}
+
+
+#subhead-text {
+	margin-bottom: 60px;
+}
+
+.about-head {
+	font-weight: 700;
+	font-size: 80px;
+	display: block;
+	margin-left: 20px;
+}
+
+.about-subhead {
+	font-weight: 700;
+	font-size: 50px;
+	display: block;
+	margin-left: 20px;
+}
+
+.about-most-subhead {
+	font-weight: 700;
+	font-size: 30px;
+	display: block;
+	margin-left: 20px;
+}
+.text {
+	margin-left: 20px;
+	line-height: 150%;
+}
+
+
+
+
+
+
+/*to clear end of floats*/
+.clearfix {
+	clear: both;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
