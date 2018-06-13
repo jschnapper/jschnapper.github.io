@@ -1,0 +1,280 @@
+/* 
+Codepen results page 
+and general selectors
+*/    
+.page {
+  /* Position */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Text */
+  color: #5C5C5C;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  letter-spacing: -.5px;
+}
+
+.text-light {
+  color: #AAAAAA;
+}
+
+/*
+*======EMAIL MODAL SELECTORS======
+*/
+.email-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 400px;
+  padding-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 20px 7px rgba(66, 11, 11, 0.14);
+  border-radius: 33px;
+}
+
+.email-container__close-btn {
+  position: absolute;
+  left: 20px;
+  top: 16px;
+  font-size: 20px;
+  color: #AAAAAA;
+  cursor: pointer;
+}
+
+.email-container__close-btn:hover {
+  color: #333;
+}
+
+.email-container--closed {
+  display: none;
+}
+
+.email-container--open {
+  display: visible;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container__input-box {
+  position: relative;
+  z-index: 0;
+  background-color: transparent;
+  width: 250px;
+  font-size: 16px;
+  padding: 12px 0px;
+  border: none;
+  outline: none;
+}
+
+.input-container__placeholder {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  padding-top: 12px;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.input-container__underline {
+  position: absolute;
+  bottom: 2px;
+  height: 2px;
+  width:100%;
+  background-color: #eee;
+  transition: 0.2s;
+}
+
+.input-container__underline--color {
+  background-color: #ff4b1f;
+  width: 0;
+}
+
+
+/* Move placeholder when input-box focused */
+.input-container__input-box:focus ~ .input-container__placeholder, .input-container__input-box:valid ~.input-container__placeholder {
+  top: -20px;
+  color: #ff4b1f;
+  font-size: 12px;
+}
+
+/* Add underline color when input-box focused */
+.input-container__input-box:focus ~ .input-container__underline--color {
+  width: 100%;
+}
+
+/*
+*======EMAIL MODAL SELECTORS======
+*/
+
+/* Container for all content except modal */
+.main-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 893px;
+  width: 537px;
+  background-color: #ffffff;
+  border-radius: 33px;
+  box-shadow: 0 5px 20px 7px rgba(66, 11, 11, 0.14);
+  filter: none;
+}
+
+
+/* Blur main content when modal open */
+.main-container__overlay--open {
+  filter: blur(1.5px);
+}
+
+
+/*
+*======CONTAINERS FOR SUB CONTENT======
+*/
+
+/* Content containers for welcome & confirmation, and for product description */
+.content-container {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-container__logo-wrapper {
+    height: 80px;
+    width: 800px;
+    margin-top: 40px;
+}
+
+.content-container__logo {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.content-container__text--large-bold {
+  font-size: 28px;
+  margin: 12px 0 2px 0;
+}
+
+.content-container__text--italic {
+  text-align: center;
+}
+
+/*
+*======BUTTON SELECTORS======
+*/
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 300px;
+  background: linear-gradient(#ff4b1f, #ff9068);
+  border-radius: 50px;
+  box-shadow: 0 2px 11px 2px rgba(0,0,0,0.14);
+  cursor: pointer;
+  margin: 20px 0;
+  transition: 0.2s;
+}
+
+.btn__overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+
+.btn__text {
+  color: #fff;
+  letter-spacing: 0;
+}
+
+.btn--small {
+  margin-top: 40px;
+  width: 150px;
+}
+
+.btn:hover .btn__overlay {
+  box-shadow: 0 3px 7px 2px rgba(0,0,0,0.12);
+  background-color: rgba(255, 255, 255, 0.1)
+}
+
+
+
+/* Section separator */
+hr {
+  width: 420px;
+  height: 2px;
+  background-color: #eee;
+  border-width: 0;
+  margin: 20px 0;
+}
+
+/*
+*======PRODUCT DESCRIPTIONS======
+*/
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+
+.description__image-wrapper {
+  position: relative;
+  left: -16px;
+  width: 70px;
+}
+
+.description__image {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.description__text {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px 20px 12px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.description__text--title {
+  font-size: 18px;
+}
+
+.description__text--link {
+  /* no properties */
+}
+
+.description__text--footer {
+  margin-top: 32px;
+  width: 408px;
+  letter-spacing: 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+.description--active {
+  opacity: 1;
+}
+
+.description--inactive {
+  opacity: 0.4;
+}
+
+
