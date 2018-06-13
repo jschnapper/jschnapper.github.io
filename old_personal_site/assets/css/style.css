@@ -146,7 +146,7 @@ code {
 }
 
 header {
-	margin-top: 48px;
+	margin-top: 32px;
 }
 
 header#article {
@@ -269,6 +269,7 @@ nav {
 #project-container a {
 	text-decoration: none;
 	color: inherit;
+	display: none;
 }
 
 .project-description {
@@ -302,6 +303,32 @@ nav {
 
 .project-hidden p {
 	font-size: 16px;
+}
+
+#social {
+    margin-top: 8px;
+    display: flex;
+    transition: 0.2s;    
+}
+
+.social__wrapper {
+    height: 30px;
+    width: 30px;
+    margin-right: 24px;
+
+}
+
+.social__logo {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: 0.2s;
+    cursor: pointer;    
+    filter: saturate(0);
+}
+
+.social__logo:hover {
+    filter: saturate(1);
 }
 
 @keyframes unhideProject {
@@ -433,6 +460,10 @@ nav {
 		top: 50%;
 		transform: translateY(-25%);
 	}
+    
+    #social {
+        justify-content: center;
+    }
 }
 
 
